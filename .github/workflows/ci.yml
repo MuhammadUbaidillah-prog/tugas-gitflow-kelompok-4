@@ -1,0 +1,14 @@
+name: CI-Pipeline
+on:
+  push:
+    branches: [ "main", "develop" ]
+  pull_request:
+    branches: [ "main", "develop" ]
+
+jobs:
+  check-tugas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Berhasil
+        run: echo "Pipeline CI Kelompok 4 Berhasil Jalan!"
